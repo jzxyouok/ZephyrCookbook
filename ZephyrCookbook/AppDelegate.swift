@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Rswift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+//        window?.rootViewController = R.storyboard.aYNewFeature.InitialController()
+        window?.rootViewController = UIStoryboard(name: "AYNewFeature", bundle: nil).instantiateInitialViewController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -40,7 +47,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+// MARK: 自定义log
+public func AYLog<T>(message: T, fileName:String = #file, className:String = #function, lineNum:Int = #line) {
+    #if DEBUG
+        let fileStr = ((fileName as NSString).lastPathComponent as NSString).deletingPathExtension;
+        print("\(fileStr)(\(className))[\(lineNum)]:\(message)")
+    #endif
 }
 

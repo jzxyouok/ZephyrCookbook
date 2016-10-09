@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h6c-bm-LOA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Feature View Controller-->
+        <scene sceneID="1tH-em-cFf">
+            <objects>
+                <viewController id="h6c-bm-LOA" customClass="AYNewFeatureViewController" customModule="ZephyrCookbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wc3-oN-mwa"/>
+                        <viewControllerLayoutGuide type="bottom" id="hr9-sx-Deg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aaq-vC-ByZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9KK-Oe-AEf">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="ecY-fd-ARV" customClass="AYCollectionViewFlowLayout" customModule="ZephyrCookbook" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="erm-TX-ZaU" customClass="AYCollectionViewCell" customModule="ZephyrCookbook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="h6c-bm-LOA" id="cxW-8Z-Vul"/>
+                                    <outlet property="delegate" destination="h6c-bm-LOA" id="Ta4-Oo-y7t"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yp-BL-fjb">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ix9-dq-ahd"/>
+                                </constraints>
+                                <state key="normal" title="马上体验">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterBtn:" destination="h6c-bm-LOA" eventType="touchUpInside" id="yhs-qi-BWN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9KK-Oe-AEf" firstAttribute="top" secondItem="aaq-vC-ByZ" secondAttribute="top" id="2hK-3E-LEy"/>
+                            <constraint firstItem="hr9-sx-Deg" firstAttribute="top" secondItem="8Yp-BL-fjb" secondAttribute="bottom" constant="80" id="jmP-jS-5fI"/>
+                            <constraint firstItem="9KK-Oe-AEf" firstAttribute="leading" secondItem="aaq-vC-ByZ" secondAttribute="leading" id="nVu-Kf-z1T"/>
+                            <constraint firstItem="8Yp-BL-fjb" firstAttribute="centerX" secondItem="aaq-vC-ByZ" secondAttribute="centerX" id="r4r-Sa-2OJ"/>
+                            <constraint firstAttribute="trailing" secondItem="9KK-Oe-AEf" secondAttribute="trailing" id="uF5-Qk-Ka1"/>
+                            <constraint firstItem="hr9-sx-Deg" firstAttribute="top" secondItem="9KK-Oe-AEf" secondAttribute="bottom" id="vgz-tN-9hT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4b-eB-T4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="-118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

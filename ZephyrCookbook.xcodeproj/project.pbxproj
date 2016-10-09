@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076EF8555E204B562FC7DB77 /* Pods_ZephyrCookbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2DE4B9D96E2AD3C803BAE3 /* Pods_ZephyrCookbook.framework */; };
+		6413F300853B0F99E5CCA0F4 /* Pods_ZephyrCookbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E134B5D42AE3B7642A2562E /* Pods_ZephyrCookbookTests.framework */; };
+		72B56C835B7E87F96946774F /* Pods_ZephyrCookbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB4AE084E94F144A67F36B6 /* Pods_ZephyrCookbookUITests.framework */; };
+		8567D4F61DAA98A200DC7C04 /* AYBannerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8567D4F51DAA98A200DC7C04 /* AYBannerVM.swift */; };
+		857727E71DAA187700CDC563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857727E61DAA187700CDC563 /* Assets.xcassets */; };
+		857727EE1DAA24AE00CDC563 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857727ED1DAA24AE00CDC563 /* R.generated.swift */; };
 		85D4E94E1DA9E9420098B2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */; };
-		85D4E9501DA9E9420098B2C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E94F1DA9E9420098B2C5 /* ViewController.swift */; };
-		85D4E9531DA9E9420098B2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D4E9511DA9E9420098B2C5 /* Main.storyboard */; };
-		85D4E9551DA9E9420098B2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D4E9541DA9E9420098B2C5 /* Assets.xcassets */; };
 		85D4E9581DA9E9420098B2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D4E9561DA9E9420098B2C5 /* LaunchScreen.storyboard */; };
 		85D4E9631DA9E9420098B2C5 /* ZephyrCookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E9621DA9E9420098B2C5 /* ZephyrCookbookTests.swift */; };
 		85D4E96E1DA9E9420098B2C5 /* ZephyrCookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E96D1DA9E9420098B2C5 /* ZephyrCookbookUITests.swift */; };
+		85FE65CE1DAA4A09000E93D6 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65CD1DAA4A09000E93D6 /* common.swift */; };
+		85FE65E31DAA5053000E93D6 /* AYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65DC1DAA5053000E93D6 /* AYMainViewController.swift */; };
+		85FE65E41DAA5053000E93D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE65DD1DAA5053000E93D6 /* Main.storyboard */; };
+		85FE65E51DAA5053000E93D6 /* AYNewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE65DF1DAA5053000E93D6 /* AYNewFeature.storyboard */; };
+		85FE65E61DAA5053000E93D6 /* AYNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65E01DAA5053000E93D6 /* AYNewFeatureViewController.swift */; };
+		85FE65E81DAA50E6000E93D6 /* AYBannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65E71DAA50E6000E93D6 /* AYBannerData.swift */; };
+		85FE65EA1DAA512F000E93D6 /* status in Resources */ = {isa = PBXBuildFile; fileRef = 85FE65E91DAA512F000E93D6 /* status */; };
+		85FE65EC1DAA72B6000E93D6 /* AYStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65EB1DAA72B6000E93D6 /* AYStatus.swift */; };
+		85FE65EE1DAA78C1000E93D6 /* AYMainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65ED1DAA78C1000E93D6 /* AYMainData.swift */; };
+		85FE65F01DAA78E0000E93D6 /* AYTitleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65EF1DAA78E0000E93D6 /* AYTitleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0542FA2FEB34CF843958596F /* Pods-ZephyrCookbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookUITests/Pods-ZephyrCookbookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1BB4AE084E94F144A67F36B6 /* Pods_ZephyrCookbookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZephyrCookbookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF27C3DFFCA6C7B5CBB9E80 /* Pods-ZephyrCookbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookTests/Pods-ZephyrCookbookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E134B5D42AE3B7642A2562E /* Pods_ZephyrCookbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZephyrCookbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F0DDDF182FFE6D227E5C2C /* Pods-ZephyrCookbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookUITests/Pods-ZephyrCookbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8567D4F51DAA98A200DC7C04 /* AYBannerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerVM.swift; sourceTree = "<group>"; };
+		857727E61DAA187700CDC563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		857727ED1DAA24AE00CDC563 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		85D4E94A1DA9E9420098B2C5 /* ZephyrCookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZephyrCookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85D4E94F1DA9E9420098B2C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		85D4E9521DA9E9420098B2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		85D4E9541DA9E9420098B2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85D4E9571DA9E9420098B2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85D4E9591DA9E9420098B2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D4E95E1DA9E9420098B2C5 /* ZephyrCookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZephyrCookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +65,20 @@
 		85D4E9691DA9E9420098B2C5 /* ZephyrCookbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZephyrCookbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D4E96D1DA9E9420098B2C5 /* ZephyrCookbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrCookbookUITests.swift; sourceTree = "<group>"; };
 		85D4E96F1DA9E9420098B2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FE65CD1DAA4A09000E93D6 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		85FE65DC1DAA5053000E93D6 /* AYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainViewController.swift; sourceTree = "<group>"; };
+		85FE65DD1DAA5053000E93D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		85FE65DF1DAA5053000E93D6 /* AYNewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYNewFeature.storyboard; sourceTree = "<group>"; };
+		85FE65E01DAA5053000E93D6 /* AYNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYNewFeatureViewController.swift; sourceTree = "<group>"; };
+		85FE65E71DAA50E6000E93D6 /* AYBannerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerData.swift; sourceTree = "<group>"; };
+		85FE65E91DAA512F000E93D6 /* status */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = status; sourceTree = "<group>"; };
+		85FE65EB1DAA72B6000E93D6 /* AYStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYStatus.swift; sourceTree = "<group>"; };
+		85FE65ED1DAA78C1000E93D6 /* AYMainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainData.swift; sourceTree = "<group>"; };
+		85FE65EF1DAA78E0000E93D6 /* AYTitleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYTitleData.swift; sourceTree = "<group>"; };
+		A1CFAB8B235186BB2FEAAB16 /* Pods-ZephyrCookbookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookTests/Pods-ZephyrCookbookTests.release.xcconfig"; sourceTree = "<group>"; };
+		B234065BDA11F59FCEE75769 /* Pods-ZephyrCookbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbook/Pods-ZephyrCookbook.release.xcconfig"; sourceTree = "<group>"; };
+		C24600A4C63B09C14F2A71D5 /* Pods-ZephyrCookbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbook/Pods-ZephyrCookbook.debug.xcconfig"; sourceTree = "<group>"; };
+		CD2DE4B9D96E2AD3C803BAE3 /* Pods_ZephyrCookbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZephyrCookbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076EF8555E204B562FC7DB77 /* Pods_ZephyrCookbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6413F300853B0F99E5CCA0F4 /* Pods_ZephyrCookbookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +102,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B56C835B7E87F96946774F /* Pods_ZephyrCookbookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CD7DF2CC61317D60B26B07E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD2DE4B9D96E2AD3C803BAE3 /* Pods_ZephyrCookbook.framework */,
+				5E134B5D42AE3B7642A2562E /* Pods_ZephyrCookbookTests.framework */,
+				1BB4AE084E94F144A67F36B6 /* Pods_ZephyrCookbookUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		853BCAA91DA9FF59008775EB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		85D4E9411DA9E9420098B2C5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +133,8 @@
 				85D4E9611DA9E9420098B2C5 /* ZephyrCookbookTests */,
 				85D4E96C1DA9E9420098B2C5 /* ZephyrCookbookUITests */,
 				85D4E94B1DA9E9420098B2C5 /* Products */,
+				96A0E48C31BCF50BCE801E84 /* Pods */,
+				5CD7DF2CC61317D60B26B07E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +151,15 @@
 		85D4E94C1DA9E9420098B2C5 /* ZephyrCookbook */ = {
 			isa = PBXGroup;
 			children = (
+				85FE65D71DAA5053000E93D6 /* Classes */,
 				85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */,
-				85D4E94F1DA9E9420098B2C5 /* ViewController.swift */,
-				85D4E9511DA9E9420098B2C5 /* Main.storyboard */,
-				85D4E9541DA9E9420098B2C5 /* Assets.xcassets */,
 				85D4E9561DA9E9420098B2C5 /* LaunchScreen.storyboard */,
+				857727ED1DAA24AE00CDC563 /* R.generated.swift */,
 				85D4E9591DA9E9420098B2C5 /* Info.plist */,
+				85FE65E91DAA512F000E93D6 /* status */,
+				85FE65CD1DAA4A09000E93D6 /* common.swift */,
+				857727E61DAA187700CDC563 /* Assets.xcassets */,
+				853BCAA91DA9FF59008775EB /* Resource */,
 			);
 			path = ZephyrCookbook;
 			sourceTree = "<group>";
@@ -125,6 +182,91 @@
 			path = ZephyrCookbookUITests;
 			sourceTree = "<group>";
 		};
+		85FE65D71DAA5053000E93D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				85FE65D81DAA5053000E93D6 /* DaoJia */,
+				85FE65D91DAA5053000E93D6 /* Discover */,
+				85FE65DA1DAA5053000E93D6 /* Haodou */,
+				85FE65DB1DAA5053000E93D6 /* Main */,
+				85FE65DE1DAA5053000E93D6 /* NewFeature */,
+				85FE65E11DAA5053000E93D6 /* Other */,
+				85FE65E21DAA5053000E93D6 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		85FE65D81DAA5053000E93D6 /* DaoJia */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DaoJia;
+			sourceTree = "<group>";
+		};
+		85FE65D91DAA5053000E93D6 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		85FE65DA1DAA5053000E93D6 /* Haodou */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Haodou;
+			sourceTree = "<group>";
+		};
+		85FE65DB1DAA5053000E93D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				85FE65DC1DAA5053000E93D6 /* AYMainViewController.swift */,
+				85FE65DD1DAA5053000E93D6 /* Main.storyboard */,
+				85FE65EB1DAA72B6000E93D6 /* AYStatus.swift */,
+				85FE65E71DAA50E6000E93D6 /* AYBannerData.swift */,
+				85FE65EF1DAA78E0000E93D6 /* AYTitleData.swift */,
+				85FE65ED1DAA78C1000E93D6 /* AYMainData.swift */,
+				8567D4F51DAA98A200DC7C04 /* AYBannerVM.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		85FE65DE1DAA5053000E93D6 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				85FE65DF1DAA5053000E93D6 /* AYNewFeature.storyboard */,
+				85FE65E01DAA5053000E93D6 /* AYNewFeatureViewController.swift */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		85FE65E11DAA5053000E93D6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		85FE65E21DAA5053000E93D6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		96A0E48C31BCF50BCE801E84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C24600A4C63B09C14F2A71D5 /* Pods-ZephyrCookbook.debug.xcconfig */,
+				B234065BDA11F59FCEE75769 /* Pods-ZephyrCookbook.release.xcconfig */,
+				1FF27C3DFFCA6C7B5CBB9E80 /* Pods-ZephyrCookbookTests.debug.xcconfig */,
+				A1CFAB8B235186BB2FEAAB16 /* Pods-ZephyrCookbookTests.release.xcconfig */,
+				80F0DDDF182FFE6D227E5C2C /* Pods-ZephyrCookbookUITests.debug.xcconfig */,
+				0542FA2FEB34CF843958596F /* Pods-ZephyrCookbookUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +274,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85D4E9721DA9E9420098B2C5 /* Build configuration list for PBXNativeTarget "ZephyrCookbook" */;
 			buildPhases = (
+				1D01805BA485D1BC35DB85BB /* [CP] Check Pods Manifest.lock */,
+				857727EC1DAA245F00CDC563 /* ShellScript */,
 				85D4E9461DA9E9420098B2C5 /* Sources */,
 				85D4E9471DA9E9420098B2C5 /* Frameworks */,
 				85D4E9481DA9E9420098B2C5 /* Resources */,
+				5DBA5379EDD31805CD985C9A /* [CP] Embed Pods Frameworks */,
+				69BE4C35F1CB6487CC6E9CC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85D4E9751DA9E9420098B2C5 /* Build configuration list for PBXNativeTarget "ZephyrCookbookTests" */;
 			buildPhases = (
+				E9D515696652817AF5864176 /* [CP] Check Pods Manifest.lock */,
 				85D4E95A1DA9E9420098B2C5 /* Sources */,
 				85D4E95B1DA9E9420098B2C5 /* Frameworks */,
 				85D4E95C1DA9E9420098B2C5 /* Resources */,
+				33F0D03D94526F63F6800487 /* [CP] Embed Pods Frameworks */,
+				85F321B535386B6B37132477 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85D4E9781DA9E9420098B2C5 /* Build configuration list for PBXNativeTarget "ZephyrCookbookUITests" */;
 			buildPhases = (
+				8B8054551EA0E29C353AE15F /* [CP] Check Pods Manifest.lock */,
 				85D4E9651DA9E9420098B2C5 /* Sources */,
 				85D4E9661DA9E9420098B2C5 /* Frameworks */,
 				85D4E9671DA9E9420098B2C5 /* Resources */,
+				20B5DE559B9217C022B17517 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +338,7 @@
 		85D4E9421DA9E9420098B2C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AY;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Zephyr;
@@ -194,17 +346,20 @@
 					85D4E9491DA9E9420098B2C5 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = L8U2X9926F;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					85D4E95D1DA9E9420098B2C5 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = L8U2X9926F;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 85D4E9491DA9E9420098B2C5;
 					};
 					85D4E9681DA9E9420098B2C5 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = L8U2X9926F;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 85D4E9491DA9E9420098B2C5;
 					};
@@ -235,9 +390,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FE65EA1DAA512F000E93D6 /* status in Resources */,
 				85D4E9581DA9E9420098B2C5 /* LaunchScreen.storyboard in Resources */,
-				85D4E9551DA9E9420098B2C5 /* Assets.xcassets in Resources */,
-				85D4E9531DA9E9420098B2C5 /* Main.storyboard in Resources */,
+				85FE65E41DAA5053000E93D6 /* Main.storyboard in Resources */,
+				857727E71DAA187700CDC563 /* Assets.xcassets in Resources */,
+				85FE65E51DAA5053000E93D6 /* AYNewFeature.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +414,157 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D01805BA485D1BC35DB85BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20B5DE559B9217C022B17517 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZephyrCookbookUITests/Pods-ZephyrCookbookUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33F0D03D94526F63F6800487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZephyrCookbookTests/Pods-ZephyrCookbookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DBA5379EDD31805CD985C9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZephyrCookbook/Pods-ZephyrCookbook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69BE4C35F1CB6487CC6E9CC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZephyrCookbook/Pods-ZephyrCookbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		857727EC1DAA245F00CDC563 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
+		85F321B535386B6B37132477 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZephyrCookbookTests/Pods-ZephyrCookbookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8054551EA0E29C353AE15F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D515696652817AF5864176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85D4E9461DA9E9420098B2C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85D4E9501DA9E9420098B2C5 /* ViewController.swift in Sources */,
 				85D4E94E1DA9E9420098B2C5 /* AppDelegate.swift in Sources */,
+				85FE65EC1DAA72B6000E93D6 /* AYStatus.swift in Sources */,
+				85FE65E61DAA5053000E93D6 /* AYNewFeatureViewController.swift in Sources */,
+				857727EE1DAA24AE00CDC563 /* R.generated.swift in Sources */,
+				85FE65EE1DAA78C1000E93D6 /* AYMainData.swift in Sources */,
+				85FE65CE1DAA4A09000E93D6 /* common.swift in Sources */,
+				8567D4F61DAA98A200DC7C04 /* AYBannerVM.swift in Sources */,
+				85FE65E31DAA5053000E93D6 /* AYMainViewController.swift in Sources */,
+				85FE65F01DAA78E0000E93D6 /* AYTitleData.swift in Sources */,
+				85FE65E81DAA50E6000E93D6 /* AYBannerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +600,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		85D4E9511DA9E9420098B2C5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85D4E9521DA9E9420098B2C5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		85D4E9561DA9E9420098B2C5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,11 +706,14 @@
 		};
 		85D4E9731DA9E9420098B2C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C24600A4C63B09C14F2A71D5 /* Pods-ZephyrCookbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = L8U2X9926F;
 				INFOPLIST_FILE = ZephyrCookbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = Zephyr.ZephyrCookbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -426,11 +722,14 @@
 		};
 		85D4E9741DA9E9420098B2C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B234065BDA11F59FCEE75769 /* Pods-ZephyrCookbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = L8U2X9926F;
 				INFOPLIST_FILE = ZephyrCookbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = Zephyr.ZephyrCookbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -439,6 +738,7 @@
 		};
 		85D4E9761DA9E9420098B2C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FF27C3DFFCA6C7B5CBB9E80 /* Pods-ZephyrCookbookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +754,7 @@
 		};
 		85D4E9771DA9E9420098B2C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CFAB8B235186BB2FEAAB16 /* Pods-ZephyrCookbookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +770,7 @@
 		};
 		85D4E9791DA9E9420098B2C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F0DDDF182FFE6D227E5C2C /* Pods-ZephyrCookbookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L8U2X9926F;
@@ -483,6 +785,7 @@
 		};
 		85D4E97A1DA9E9420098B2C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0542FA2FEB34CF843958596F /* Pods-ZephyrCookbookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L8U2X9926F;
@@ -514,6 +817,7 @@
 				85D4E9741DA9E9420098B2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85D4E9751DA9E9420098B2C5 /* Build configuration list for PBXNativeTarget "ZephyrCookbookTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +826,7 @@
 				85D4E9771DA9E9420098B2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85D4E9781DA9E9420098B2C5 /* Build configuration list for PBXNativeTarget "ZephyrCookbookUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +835,7 @@
 				85D4E97A1DA9E9420098B2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
