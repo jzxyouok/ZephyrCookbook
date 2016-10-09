@@ -25,7 +25,7 @@ class AYBannerVM: UIScrollView {
             contentSize = CGSize(width: AYScreamWidth * CGFloat((bannerArr?.count)! + 2), height: height)
             
             let firstImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: AYScreamWidth, height: height))
-            guard let firstImageURLStr = bannerArr?[0].imgs else {
+            guard let firstImageURLStr = bannerArr?.last?.imgs else {
                 AYLog(message: "没有加载到第一张图片")
                 return
             }
@@ -33,7 +33,7 @@ class AYBannerVM: UIScrollView {
             addSubview(firstImageView)
             
             let lastImageView = UIImageView(frame: CGRect(x: AYScreamWidth * CGFloat((bannerArr?.count)! + 1), y: 0, width: AYScreamWidth, height: height))
-            guard let lastImageURLStr = bannerArr?.last?.imgs else {
+            guard let lastImageURLStr = bannerArr?[0].imgs else {
                 AYLog(message: "没有加载到最后一张图片")
                 return }
             lastImageView.sd_setImage(with: URL(string: lastImageURLStr))
@@ -62,6 +62,7 @@ class AYBannerVM: UIScrollView {
         bounces = false
         isPagingEnabled = true
         isUserInteractionEnabled = true
+        contentOffset = CGPoint(x: AYScreamWidth, y: 0)
     }
     
     required init?(coder aDecoder: NSCoder) {
