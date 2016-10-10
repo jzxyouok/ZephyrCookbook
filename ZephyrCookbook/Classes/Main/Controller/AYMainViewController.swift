@@ -15,12 +15,10 @@ class AYMainViewController: UIViewController {
     
     lazy var bannerView: AYBannerVM = AYBannerVM()
     
-    lazy var statuses: AYStatus = AYStatus()
-    
-    lazy var pageContr: UIPageControl = UIPageControl()
+    lazy var pageContr: AYPageControl = AYPageControl()
     
     lazy var timer: Timer = {
-        let timer = Timer(timeInterval: 1.0, target: self, selector: #selector(autoScrollBanner), userInfo: nil, repeats: true)
+        let timer = Timer(timeInterval: 5.0, target: self, selector: #selector(autoScrollBanner), userInfo: nil, repeats: true)
         return timer
     }()
     
@@ -37,24 +35,21 @@ class AYMainViewController: UIViewController {
 
     private func setUpBannerViewAPageContr() {
         
-        guard let bannerArr = statuses.bannerArr else {
+        guard let bannerArr = AYStatusTool.shareInstance.bannerArr else {
             AYLog(message: "没有BanerArr的数据")
             return
         }
         bannerView.bannerArr = bannerArr
         bannerView.delegate = self
         mainScrollView.addSubview(bannerView)
+        pageContr.bannerArr = bannerArr
         let size = pageContr.size(forNumberOfPages: bannerArr.count)
         pageContr.frame = CGRect(x: (AYScreamWidth - size.width) * 0.5, y: bannerView.bounds.height - 15, width: size.width, height: size.height)
-        pageContr.currentPageIndicatorTintColor = UIColor.orange
-        pageContr.pageIndicatorTintColor = UIColor.lightGray
-        pageContr.currentPage = 0
-        pageContr.numberOfPages = bannerArr.count
         view.insertSubview(pageContr, aboveSubview: bannerView)
     }
     
     @objc private func autoScrollBanner() {
-        guard let count = statuses.bannerArr?.count else{
+        guard let count = AYStatusTool.shareInstance.bannerArr?.count else{
             return
         }
         let page = Int(bannerView.contentOffset.x / AYScreamWidth)
@@ -67,16 +62,13 @@ class AYMainViewController: UIViewController {
             pageContr.currentPage = page
         }
         bannerView.setContentOffset(CGPoint(x: bannerView.contentOffset.x + AYScreamWidth, y: 0), animated: true)
-        AYLog(message: page)
-        AYLog(message: pageContr.currentPage)
-        AYLog(message: bannerView.contentOffset)
     }
     
 }
 
 extension AYMainViewController: UIScrollViewDelegate{
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        guard let count = statuses.bannerArr?.count else{
+        guard let count = AYStatusTool.shareInstance.bannerArr?.count else{
             return
         }
         let page = Int((scrollView.contentOffset.x + AYScreamWidth * 0.5) / AYScreamWidth) - 1

@@ -10,23 +10,25 @@
 		076EF8555E204B562FC7DB77 /* Pods_ZephyrCookbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2DE4B9D96E2AD3C803BAE3 /* Pods_ZephyrCookbook.framework */; };
 		6413F300853B0F99E5CCA0F4 /* Pods_ZephyrCookbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E134B5D42AE3B7642A2562E /* Pods_ZephyrCookbookTests.framework */; };
 		72B56C835B7E87F96946774F /* Pods_ZephyrCookbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB4AE084E94F144A67F36B6 /* Pods_ZephyrCookbookUITests.framework */; };
-		8567D4F61DAA98A200DC7C04 /* AYBannerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8567D4F51DAA98A200DC7C04 /* AYBannerVM.swift */; };
 		857727E71DAA187700CDC563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857727E61DAA187700CDC563 /* Assets.xcassets */; };
 		857727EE1DAA24AE00CDC563 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857727ED1DAA24AE00CDC563 /* R.generated.swift */; };
+		85C3DBC21DABBCC900482622 /* AYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBB81DABBCC900482622 /* AYMainViewController.swift */; };
+		85C3DBC31DABBCC900482622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C3DBB91DABBCC900482622 /* Main.storyboard */; };
+		85C3DBC41DABBCC900482622 /* AYBannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBBB1DABBCC900482622 /* AYBannerData.swift */; };
+		85C3DBC51DABBCC900482622 /* AYMainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBBC1DABBCC900482622 /* AYMainData.swift */; };
+		85C3DBC71DABBCC900482622 /* AYTitleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBBE1DABBCC900482622 /* AYTitleData.swift */; };
+		85C3DBC81DABBCC900482622 /* AYBannerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBC01DABBCC900482622 /* AYBannerVM.swift */; };
+		85C3DBC91DABBCC900482622 /* AYPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBC11DABBCC900482622 /* AYPageControl.swift */; };
+		85C3DBCB1DABBE6A00482622 /* AYMiddleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBCA1DABBE6A00482622 /* AYMiddleData.swift */; };
+		85C3DBCE1DABC1AB00482622 /* AYStatusTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3DBCD1DABC1AB00482622 /* AYStatusTool.swift */; };
 		85D4E94E1DA9E9420098B2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */; };
 		85D4E9581DA9E9420098B2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D4E9561DA9E9420098B2C5 /* LaunchScreen.storyboard */; };
 		85D4E9631DA9E9420098B2C5 /* ZephyrCookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E9621DA9E9420098B2C5 /* ZephyrCookbookTests.swift */; };
 		85D4E96E1DA9E9420098B2C5 /* ZephyrCookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E96D1DA9E9420098B2C5 /* ZephyrCookbookUITests.swift */; };
 		85FE65CE1DAA4A09000E93D6 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65CD1DAA4A09000E93D6 /* common.swift */; };
-		85FE65E31DAA5053000E93D6 /* AYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65DC1DAA5053000E93D6 /* AYMainViewController.swift */; };
-		85FE65E41DAA5053000E93D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE65DD1DAA5053000E93D6 /* Main.storyboard */; };
 		85FE65E51DAA5053000E93D6 /* AYNewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE65DF1DAA5053000E93D6 /* AYNewFeature.storyboard */; };
 		85FE65E61DAA5053000E93D6 /* AYNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65E01DAA5053000E93D6 /* AYNewFeatureViewController.swift */; };
-		85FE65E81DAA50E6000E93D6 /* AYBannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65E71DAA50E6000E93D6 /* AYBannerData.swift */; };
 		85FE65EA1DAA512F000E93D6 /* status in Resources */ = {isa = PBXBuildFile; fileRef = 85FE65E91DAA512F000E93D6 /* status */; };
-		85FE65EC1DAA72B6000E93D6 /* AYStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65EB1DAA72B6000E93D6 /* AYStatus.swift */; };
-		85FE65EE1DAA78C1000E93D6 /* AYMainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65ED1DAA78C1000E93D6 /* AYMainData.swift */; };
-		85FE65F01DAA78E0000E93D6 /* AYTitleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE65EF1DAA78E0000E93D6 /* AYTitleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +54,17 @@
 		1FF27C3DFFCA6C7B5CBB9E80 /* Pods-ZephyrCookbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookTests/Pods-ZephyrCookbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E134B5D42AE3B7642A2562E /* Pods_ZephyrCookbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZephyrCookbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F0DDDF182FFE6D227E5C2C /* Pods-ZephyrCookbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookUITests/Pods-ZephyrCookbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8567D4F51DAA98A200DC7C04 /* AYBannerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerVM.swift; sourceTree = "<group>"; };
 		857727E61DAA187700CDC563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		857727ED1DAA24AE00CDC563 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		85C3DBB81DABBCC900482622 /* AYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainViewController.swift; sourceTree = "<group>"; };
+		85C3DBB91DABBCC900482622 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		85C3DBBB1DABBCC900482622 /* AYBannerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerData.swift; sourceTree = "<group>"; };
+		85C3DBBC1DABBCC900482622 /* AYMainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainData.swift; sourceTree = "<group>"; };
+		85C3DBBE1DABBCC900482622 /* AYTitleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYTitleData.swift; sourceTree = "<group>"; };
+		85C3DBC01DABBCC900482622 /* AYBannerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerVM.swift; sourceTree = "<group>"; };
+		85C3DBC11DABBCC900482622 /* AYPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYPageControl.swift; sourceTree = "<group>"; };
+		85C3DBCA1DABBE6A00482622 /* AYMiddleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMiddleData.swift; sourceTree = "<group>"; };
+		85C3DBCD1DABC1AB00482622 /* AYStatusTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYStatusTool.swift; sourceTree = "<group>"; };
 		85D4E94A1DA9E9420098B2C5 /* ZephyrCookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZephyrCookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85D4E9571DA9E9420098B2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,15 +76,9 @@
 		85D4E96D1DA9E9420098B2C5 /* ZephyrCookbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrCookbookUITests.swift; sourceTree = "<group>"; };
 		85D4E96F1DA9E9420098B2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FE65CD1DAA4A09000E93D6 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
-		85FE65DC1DAA5053000E93D6 /* AYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainViewController.swift; sourceTree = "<group>"; };
-		85FE65DD1DAA5053000E93D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		85FE65DF1DAA5053000E93D6 /* AYNewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYNewFeature.storyboard; sourceTree = "<group>"; };
 		85FE65E01DAA5053000E93D6 /* AYNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYNewFeatureViewController.swift; sourceTree = "<group>"; };
-		85FE65E71DAA50E6000E93D6 /* AYBannerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerData.swift; sourceTree = "<group>"; };
 		85FE65E91DAA512F000E93D6 /* status */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = status; sourceTree = "<group>"; };
-		85FE65EB1DAA72B6000E93D6 /* AYStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYStatus.swift; sourceTree = "<group>"; };
-		85FE65ED1DAA78C1000E93D6 /* AYMainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainData.swift; sourceTree = "<group>"; };
-		85FE65EF1DAA78E0000E93D6 /* AYTitleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYTitleData.swift; sourceTree = "<group>"; };
 		A1CFAB8B235186BB2FEAAB16 /* Pods-ZephyrCookbookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookTests/Pods-ZephyrCookbookTests.release.xcconfig"; sourceTree = "<group>"; };
 		B234065BDA11F59FCEE75769 /* Pods-ZephyrCookbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbook/Pods-ZephyrCookbook.release.xcconfig"; sourceTree = "<group>"; };
 		C24600A4C63B09C14F2A71D5 /* Pods-ZephyrCookbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbook/Pods-ZephyrCookbook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +128,43 @@
 			children = (
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		85C3DBB71DABBCC900482622 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85C3DBB81DABBCC900482622 /* AYMainViewController.swift */,
+				85C3DBB91DABBCC900482622 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85C3DBBA1DABBCC900482622 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85C3DBBB1DABBCC900482622 /* AYBannerData.swift */,
+				85C3DBBE1DABBCC900482622 /* AYTitleData.swift */,
+				85C3DBCA1DABBE6A00482622 /* AYMiddleData.swift */,
+				85C3DBBC1DABBCC900482622 /* AYMainData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85C3DBBF1DABBCC900482622 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85C3DBC01DABBCC900482622 /* AYBannerVM.swift */,
+				85C3DBC11DABBCC900482622 /* AYPageControl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85C3DBCC1DABC1AB00482622 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				85C3DBCD1DABC1AB00482622 /* AYStatusTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		85D4E9411DA9E9420098B2C5 = {
@@ -185,6 +226,7 @@
 		85FE65D71DAA5053000E93D6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				85C3DBCC1DABC1AB00482622 /* Tools */,
 				85FE65D81DAA5053000E93D6 /* DaoJia */,
 				85FE65D91DAA5053000E93D6 /* Discover */,
 				85FE65DA1DAA5053000E93D6 /* Haodou */,
@@ -220,13 +262,9 @@
 		85FE65DB1DAA5053000E93D6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				85FE65DC1DAA5053000E93D6 /* AYMainViewController.swift */,
-				85FE65DD1DAA5053000E93D6 /* Main.storyboard */,
-				85FE65EB1DAA72B6000E93D6 /* AYStatus.swift */,
-				85FE65E71DAA50E6000E93D6 /* AYBannerData.swift */,
-				85FE65EF1DAA78E0000E93D6 /* AYTitleData.swift */,
-				85FE65ED1DAA78C1000E93D6 /* AYMainData.swift */,
-				8567D4F51DAA98A200DC7C04 /* AYBannerVM.swift */,
+				85C3DBB71DABBCC900482622 /* Controller */,
+				85C3DBBA1DABBCC900482622 /* Model */,
+				85C3DBBF1DABBCC900482622 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -392,7 +430,7 @@
 			files = (
 				85FE65EA1DAA512F000E93D6 /* status in Resources */,
 				85D4E9581DA9E9420098B2C5 /* LaunchScreen.storyboard in Resources */,
-				85FE65E41DAA5053000E93D6 /* Main.storyboard in Resources */,
+				85C3DBC31DABBCC900482622 /* Main.storyboard in Resources */,
 				857727E71DAA187700CDC563 /* Assets.xcassets in Resources */,
 				85FE65E51DAA5053000E93D6 /* AYNewFeature.storyboard in Resources */,
 			);
@@ -555,16 +593,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C3DBCE1DABC1AB00482622 /* AYStatusTool.swift in Sources */,
+				85C3DBCB1DABBE6A00482622 /* AYMiddleData.swift in Sources */,
+				85C3DBC51DABBCC900482622 /* AYMainData.swift in Sources */,
+				85C3DBC71DABBCC900482622 /* AYTitleData.swift in Sources */,
+				85C3DBC41DABBCC900482622 /* AYBannerData.swift in Sources */,
 				85D4E94E1DA9E9420098B2C5 /* AppDelegate.swift in Sources */,
-				85FE65EC1DAA72B6000E93D6 /* AYStatus.swift in Sources */,
+				85C3DBC81DABBCC900482622 /* AYBannerVM.swift in Sources */,
 				85FE65E61DAA5053000E93D6 /* AYNewFeatureViewController.swift in Sources */,
 				857727EE1DAA24AE00CDC563 /* R.generated.swift in Sources */,
-				85FE65EE1DAA78C1000E93D6 /* AYMainData.swift in Sources */,
 				85FE65CE1DAA4A09000E93D6 /* common.swift in Sources */,
-				8567D4F61DAA98A200DC7C04 /* AYBannerVM.swift in Sources */,
-				85FE65E31DAA5053000E93D6 /* AYMainViewController.swift in Sources */,
-				85FE65F01DAA78E0000E93D6 /* AYTitleData.swift in Sources */,
-				85FE65E81DAA50E6000E93D6 /* AYBannerData.swift in Sources */,
+				85C3DBC91DABBCC900482622 /* AYPageControl.swift in Sources */,
+				85C3DBC21DABBCC900482622 /* AYMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

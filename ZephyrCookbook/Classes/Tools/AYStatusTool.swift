@@ -8,11 +8,17 @@
 
 import UIKit
 
-class AYStatus: NSObject {
+class AYStatusTool: NSObject {
     
     var bannerArr: [AYBannerData]?
     var titleArr: [AYTitleData]?
     var mainArr: [AYMainData]?
+    var middleArr: [AYMiddleData]?
+    
+    static let shareInstance: AYStatusTool = {
+       let instance = AYStatusTool()
+        return instance
+    }()
     
     override init() {
         super.init()
@@ -32,8 +38,10 @@ class AYStatus: NSObject {
         mainArr = AYMainData.mainDataArrWithArray(array: allStatus["list"] as! [[String: Any]])
         let headerArr = allStatus["header"] as! [[String: Any]]
         let bannerDict = headerArr[0] 
-        let titleDict = headerArr[1] 
+        let titleDict = headerArr[1]
+        let middleDict = headerArr[2]
         bannerArr = AYBannerData.bannerDataArrWithArray(array: bannerDict["list"] as! [[String: Any]])
         titleArr = AYTitleData.titleDataArrWithArray(array: titleDict["list"] as! [[String: Any]])
+        middleArr = AYMiddleData.middleDataArrWithArray(array: middleDict["list"] as! [[String: Any]])
     }
 }
