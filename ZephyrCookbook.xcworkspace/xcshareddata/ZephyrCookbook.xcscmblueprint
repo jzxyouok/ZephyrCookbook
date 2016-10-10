@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F649B638191494F7E2B9372D7B42A0CF29C6CB9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8F649B638191494F7E2B9372D7B42A0CF29C6CB9" : 9223372036854775807,
+    "328E41A18ED269F53FC2770BA6764B1CD01A0C49" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "63CD7CDA-E2DF-484F-9511-912AAE9F72E4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8F649B638191494F7E2B9372D7B42A0CF29C6CB9" : "ZephyrCookbook\/",
+    "328E41A18ED269F53FC2770BA6764B1CD01A0C49" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ZephyrCookbook",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ZephyrCookbook.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:anye3210\/ZephyrCookbook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "328E41A18ED269F53FC2770BA6764B1CD01A0C49"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:anye3210\/ZephyrHaoDouCookbook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F649B638191494F7E2B9372D7B42A0CF29C6CB9"
+    }
+  ]
+}
