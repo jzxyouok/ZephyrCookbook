@@ -148,7 +148,7 @@ struct _R {
     }
     
     struct main: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = AYMainViewController
+      typealias InitialController = AYHomeViewController
       
       let bundle = _R.hostingBundle
       let name = "Main"

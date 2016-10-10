@@ -9,18 +9,21 @@
 import UIKit
 
 class AYPageControl: UIPageControl {
-
-    var bannerArr: [AYBannerData]?{
-        didSet{
-            numberOfPages = (bannerArr?.count)!
-        }
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        let bannerArr = AYStatusTool.shareInstance.bannerArr
+        
         currentPageIndicatorTintColor = UIColor.orange
         pageIndicatorTintColor = UIColor.lightGray
         currentPage = 0
+        numberOfPages = (bannerArr?.count)!
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
         
     }
     

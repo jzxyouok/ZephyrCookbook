@@ -10,3 +10,4 @@ import UIKit
 
 let AYScreamWidth = UIScreen.main.bounds.width
 
+let AYBannerViewHeight = AYScreamWidth * 0.609375

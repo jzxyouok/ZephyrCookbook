@@ -31,7 +31,7 @@ struct R {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 7 images.
+  /// This `R.image` struct is generated, and contains static references to 8 images.
   struct image {
     /// Image `bannerImage`.
     static let bannerImage = ImageResource(bundle: _R.hostingBundle, name: "bannerImage")
@@ -47,6 +47,8 @@ struct R {
     static let guide_step5 = ImageResource(bundle: _R.hostingBundle, name: "guide_step5")
     /// Image `LaunchImage`.
     static let launchImage = ImageResource(bundle: _R.hostingBundle, name: "LaunchImage")
+    /// Image `placeHolder`.
+    static let placeHolder = ImageResource(bundle: _R.hostingBundle, name: "placeHolder")
     
     /// `UIImage(named: "bannerImage", bundle: ..., traitCollection: ...)`
     static func bannerImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
@@ -83,6 +85,11 @@ struct R {
       return UIImage(resource: R.image.launchImage, compatibleWithTraitCollection: traitCollection)
     }
     
+    /// `UIImage(named: "placeHolder", bundle: ..., traitCollection: ...)`
+    static func placeHolder(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.placeHolder, compatibleWithTraitCollection: traitCollection)
+    }
+    
     private init() {}
   }
   
@@ -104,18 +111,41 @@ struct R {
     private init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
   struct storyboard {
     /// Storyboard `AYNewFeature`.
     static let aYNewFeature = _R.storyboard.aYNewFeature()
+    /// Storyboard `DaoJia`.
+    static let daoJia = _R.storyboard.daoJia()
+    /// Storyboard `Discover`.
+    static let discover = _R.storyboard.discover()
+    /// Storyboard `Home`.
+    static let home = _R.storyboard.home()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `Profile`.
+    static let profile = _R.storyboard.profile()
     
     /// `UIStoryboard(name: "AYNewFeature", bundle: ...)`
     static func aYNewFeature(_: Void) -> UIStoryboard {
       return UIStoryboard(resource: R.storyboard.aYNewFeature)
+    }
+    
+    /// `UIStoryboard(name: "DaoJia", bundle: ...)`
+    static func daoJia(_: Void) -> UIStoryboard {
+      return UIStoryboard(resource: R.storyboard.daoJia)
+    }
+    
+    /// `UIStoryboard(name: "Discover", bundle: ...)`
+    static func discover(_: Void) -> UIStoryboard {
+      return UIStoryboard(resource: R.storyboard.discover)
+    }
+    
+    /// `UIStoryboard(name: "Home", bundle: ...)`
+    static func home(_: Void) -> UIStoryboard {
+      return UIStoryboard(resource: R.storyboard.home)
     }
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
@@ -126,6 +156,11 @@ struct R {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void) -> UIStoryboard {
       return UIStoryboard(resource: R.storyboard.main)
+    }
+    
+    /// `UIStoryboard(name: "Profile", bundle: ...)`
+    static func profile(_: Void) -> UIStoryboard {
+      return UIStoryboard(resource: R.storyboard.profile)
     }
     
     private init() {}
@@ -157,6 +192,33 @@ struct _R {
       private init() {}
     }
     
+    struct daoJia: StoryboardResourceWithInitialControllerType {
+      typealias InitialController = UIViewController
+      
+      let bundle = _R.hostingBundle
+      let name = "DaoJia"
+      
+      private init() {}
+    }
+    
+    struct discover: StoryboardResourceWithInitialControllerType {
+      typealias InitialController = UIViewController
+      
+      let bundle = _R.hostingBundle
+      let name = "Discover"
+      
+      private init() {}
+    }
+    
+    struct home: StoryboardResourceWithInitialControllerType {
+      typealias InitialController = AYHomeViewController
+      
+      let bundle = _R.hostingBundle
+      let name = "Home"
+      
+      private init() {}
+    }
+    
     struct launchScreen: StoryboardResourceWithInitialControllerType {
       typealias InitialController = UIViewController
       
@@ -167,10 +229,19 @@ struct _R {
     }
     
     struct main: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = AYMainViewController
+      typealias InitialController = UINavigationController
       
       let bundle = _R.hostingBundle
       let name = "Main"
+      
+      private init() {}
+    }
+    
+    struct profile: StoryboardResourceWithInitialControllerType {
+      typealias InitialController = UIViewController
+      
+      let bundle = _R.hostingBundle
+      let name = "Profile"
       
       private init() {}
     }
