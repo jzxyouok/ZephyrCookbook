@@ -57,14 +57,19 @@ class AYMainViewController: UIViewController {
         guard let count = statuses.bannerArr?.count else{
             return
         }
-        let page = Int((bannerView.contentOffset.x + AYScreamWidth * 0.5) / AYScreamWidth)
-        if page == count + 1 {
-            pageContr.currentPage = 0
+        let page = Int(bannerView.contentOffset.x / AYScreamWidth)
+        if page == count + 1{
+            pageContr.currentPage = 1
             bannerView.contentOffset = CGPoint(x: AYScreamWidth, y: 0)
-        }else{
+        }else if page == count{
+            pageContr.currentPage = 0
+        }else {
             pageContr.currentPage = page
-            bannerView.setContentOffset(CGPoint(x: bannerView.contentOffset.x + AYScreamWidth, y: 0), animated: true)
         }
+        bannerView.setContentOffset(CGPoint(x: bannerView.contentOffset.x + AYScreamWidth, y: 0), animated: true)
+        AYLog(message: page)
+        AYLog(message: pageContr.currentPage)
+        AYLog(message: bannerView.contentOffset)
     }
     
 }
@@ -75,7 +80,7 @@ extension AYMainViewController: UIScrollViewDelegate{
             return
         }
         let page = Int((scrollView.contentOffset.x + AYScreamWidth * 0.5) / AYScreamWidth) - 1
-        if page == count {
+        if page == count + 1 {
             pageContr.currentPage = 0
             bannerView.contentOffset = CGPoint(x: AYScreamWidth, y: 0)
         }else if page == -1{
