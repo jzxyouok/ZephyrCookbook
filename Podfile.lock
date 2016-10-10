@@ -1,0 +1,20 @@
+PODS:
+  - R.swift (2.4.0):
+    - R.swift.Library (~> 2.2.0)
+  - R.swift.Library (2.2.0)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - R.swift (~> 2.4.0)
+  - SDWebImage (~> 3.8.1)
+
+SPEC CHECKSUMS:
+  R.swift: 0ef9c42dc6c94ac44a3c78a7639c73f855a8e159
+  R.swift.Library: 31a487b65381f37a7d203a6f1f935b43c9be35b0
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+PODFILE CHECKSUM: febaf909dc28735b9f77c3f8ae32b6cbc06efa9f
+
+COCOAPODS: 1.0.1
