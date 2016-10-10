@@ -11,9 +11,7 @@
 		6413F300853B0F99E5CCA0F4 /* Pods_ZephyrCookbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E134B5D42AE3B7642A2562E /* Pods_ZephyrCookbookTests.framework */; };
 		72B56C835B7E87F96946774F /* Pods_ZephyrCookbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB4AE084E94F144A67F36B6 /* Pods_ZephyrCookbookUITests.framework */; };
 		856750E01DABEFB700666B0F /* DaoJia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750BF1DABEFB700666B0F /* DaoJia.storyboard */; };
-		856750E11DABEFB700666B0F /* DaoJia~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750C01DABEFB700666B0F /* DaoJia~.storyboard */; };
 		856750E21DABEFB700666B0F /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750C21DABEFB700666B0F /* Discover.storyboard */; };
-		856750E31DABEFB700666B0F /* Discover~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750C31DABEFB700666B0F /* Discover~.storyboard */; };
 		856750E41DABEFB700666B0F /* AYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750C71DABEFB700666B0F /* AYHomeViewController.swift */; };
 		856750E51DABEFB700666B0F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750C81DABEFB700666B0F /* Home.storyboard */; };
 		856750E61DABEFB700666B0F /* AYBannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750CA1DABEFB700666B0F /* AYBannerData.swift */; };
@@ -30,8 +28,8 @@
 		856750F11DABEFB700666B0F /* AYNewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750D81DABEFB700666B0F /* AYNewFeature.storyboard */; };
 		856750F21DABEFB700666B0F /* AYNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750D91DABEFB700666B0F /* AYNewFeatureViewController.swift */; };
 		856750F31DABEFB700666B0F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750DC1DABEFB700666B0F /* Profile.storyboard */; };
-		856750F41DABEFB700666B0F /* Profile~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750DD1DABEFB700666B0F /* Profile~.storyboard */; };
 		856750F51DABEFB700666B0F /* AYStatusTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750DF1DABEFB700666B0F /* AYStatusTool.swift */; };
+		856750F71DABF09C00666B0F /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750F61DABF09C00666B0F /* common.swift */; };
 		857727E71DAA187700CDC563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857727E61DAA187700CDC563 /* Assets.xcassets */; };
 		857727EE1DAA24AE00CDC563 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857727ED1DAA24AE00CDC563 /* R.generated.swift */; };
 		85D4E94E1DA9E9420098B2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */; };
@@ -65,9 +63,7 @@
 		5E134B5D42AE3B7642A2562E /* Pods_ZephyrCookbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZephyrCookbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F0DDDF182FFE6D227E5C2C /* Pods-ZephyrCookbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZephyrCookbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZephyrCookbookUITests/Pods-ZephyrCookbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		856750BF1DABEFB700666B0F /* DaoJia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DaoJia.storyboard; sourceTree = "<group>"; };
-		856750C01DABEFB700666B0F /* DaoJia~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "DaoJia~.storyboard"; sourceTree = "<group>"; };
 		856750C21DABEFB700666B0F /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
-		856750C31DABEFB700666B0F /* Discover~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Discover~.storyboard"; sourceTree = "<group>"; };
 		856750C71DABEFB700666B0F /* AYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYHomeViewController.swift; sourceTree = "<group>"; };
 		856750C81DABEFB700666B0F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		856750CA1DABEFB700666B0F /* AYBannerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerData.swift; sourceTree = "<group>"; };
@@ -84,8 +80,8 @@
 		856750D81DABEFB700666B0F /* AYNewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYNewFeature.storyboard; sourceTree = "<group>"; };
 		856750D91DABEFB700666B0F /* AYNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYNewFeatureViewController.swift; sourceTree = "<group>"; };
 		856750DC1DABEFB700666B0F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		856750DD1DABEFB700666B0F /* Profile~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Profile~.storyboard"; sourceTree = "<group>"; };
 		856750DF1DABEFB700666B0F /* AYStatusTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYStatusTool.swift; sourceTree = "<group>"; };
+		856750F61DABF09C00666B0F /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		857727E61DAA187700CDC563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		857727ED1DAA24AE00CDC563 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		85D4E94A1DA9E9420098B2C5 /* ZephyrCookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZephyrCookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +151,6 @@
 			children = (
 				856750BE1DABEFB700666B0F /* DaoJia */,
 				856750C11DABEFB700666B0F /* Discover */,
-				856750C41DABEFB700666B0F /* Haodou */,
 				856750C51DABEFB700666B0F /* Home */,
 				856750D51DABEFB700666B0F /* Main */,
 				856750D71DABEFB700666B0F /* NewFeature */,
@@ -170,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				856750BF1DABEFB700666B0F /* DaoJia.storyboard */,
-				856750C01DABEFB700666B0F /* DaoJia~.storyboard */,
 			);
 			path = DaoJia;
 			sourceTree = "<group>";
@@ -179,16 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				856750C21DABEFB700666B0F /* Discover.storyboard */,
-				856750C31DABEFB700666B0F /* Discover~.storyboard */,
 			);
 			path = Discover;
-			sourceTree = "<group>";
-		};
-		856750C41DABEFB700666B0F /* Haodou */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Haodou;
 			sourceTree = "<group>";
 		};
 		856750C51DABEFB700666B0F /* Home */ = {
@@ -262,7 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				856750DC1DABEFB700666B0F /* Profile.storyboard */,
-				856750DD1DABEFB700666B0F /* Profile~.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -303,6 +288,7 @@
 				856750BD1DABEFB700666B0F /* Classes */,
 				85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */,
 				85D4E9561DA9E9420098B2C5 /* LaunchScreen.storyboard */,
+				856750F61DABF09C00666B0F /* common.swift */,
 				857727ED1DAA24AE00CDC563 /* R.generated.swift */,
 				85D4E9591DA9E9420098B2C5 /* Info.plist */,
 				85FE65E91DAA512F000E93D6 /* status */,
@@ -468,14 +454,11 @@
 			files = (
 				856750F11DABEFB700666B0F /* AYNewFeature.storyboard in Resources */,
 				856750F31DABEFB700666B0F /* Profile.storyboard in Resources */,
-				856750E31DABEFB700666B0F /* Discover~.storyboard in Resources */,
 				856750E01DABEFB700666B0F /* DaoJia.storyboard in Resources */,
 				85FE65EA1DAA512F000E93D6 /* status in Resources */,
-				856750E11DABEFB700666B0F /* DaoJia~.storyboard in Resources */,
 				85D4E9581DA9E9420098B2C5 /* LaunchScreen.storyboard in Resources */,
 				857727E71DAA187700CDC563 /* Assets.xcassets in Resources */,
 				856750F01DABEFB700666B0F /* Main.storyboard in Resources */,
-				856750F41DABEFB700666B0F /* Profile~.storyboard in Resources */,
 				856750E21DABEFB700666B0F /* Discover.storyboard in Resources */,
 				856750E51DABEFB700666B0F /* Home.storyboard in Resources */,
 			);
@@ -638,6 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856750F71DABF09C00666B0F /* common.swift in Sources */,
 				856750F51DABEFB700666B0F /* AYStatusTool.swift in Sources */,
 				856750E81DABEFB700666B0F /* AYMiddleData.swift in Sources */,
 				85D4E94E1DA9E9420098B2C5 /* AppDelegate.swift in Sources */,
