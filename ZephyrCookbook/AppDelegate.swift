@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UIStoryboard(name: "AYNewFeature", bundle: nil).instantiateInitialViewController()
         window?.makeKeyAndVisible()
         
+        UINavigationBar.appearance().tintColor = UIColor.orange
+        UITabBar.appearance().tintColor = UIColor.orange
+        
         return true
     }
 

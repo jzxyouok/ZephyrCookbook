@@ -48,7 +48,8 @@ class AYTitleView: UIView {
             let iconX: CGFloat = width * (1 - iconRatio) / 2
             let iconY: CGFloat = iconX
             let iconView = UIImageView(frame: CGRect(x: iconX, y: iconY, width: iconW, height: iconH))
-            iconView.sd_setImage(with: URL(string: titleData.imgs!))
+            let imageName = String(format: "title%d", index + 1)
+            iconView.image = UIImage(named: imageName as String)
             //设置文字View
             let titleLabel = UILabel()
             titleLabel.text = titleData.title
@@ -61,6 +62,5 @@ class AYTitleView: UIView {
             addSubview(middleSingleView)
         }
         frame = CGRect(x: 0, y: AYBannerViewHeight, width: AYScreamWidth, height: height - 10)
-        AYLog(message: AYBannerViewHeight)
     }
 }

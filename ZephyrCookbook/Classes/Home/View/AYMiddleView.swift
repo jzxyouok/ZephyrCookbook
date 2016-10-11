@@ -34,19 +34,20 @@ class AYMiddleView: UIView {
         leftView.backgroundColor = UIColor.green
         
         let rightH = (leftW - margin) * 0.5
+        let rightW = (AYScreamWidth - leftW - margin * 2) * 0.5
         let rightTopView = UIView(frame: CGRect(x: leftW + margin, y: 0, width: leftW, height: rightH))
         let rightTopImageView = UIImageView()
         rightTopImageView.frame = rightTopView.bounds
         rightTopView.addSubview(rightTopImageView)
         rightTopView.backgroundColor = UIColor.green
         
-        let rightBottomLeftView = UIView(frame: CGRect(x: leftW + margin, y: rightH + margin, width: rightH, height: rightH))
+        let rightBottomLeftView = UIView(frame: CGRect(x: leftW + margin, y: rightH + margin, width: rightW, height: rightH))
         let rightBottomLeftImageView = UIImageView()
         rightBottomLeftImageView.frame = rightTopView.bounds
         rightBottomLeftView.addSubview(rightBottomLeftImageView)
         rightBottomLeftView.backgroundColor = UIColor.green
         
-        let rightBottomRightView = UIView(frame: CGRect(x: AYScreamWidth - rightH, y: rightH + margin, width: rightH, height: rightH))
+        let rightBottomRightView = UIView(frame: CGRect(x: rightBottomLeftView.frame.maxX + margin, y: rightH + margin, width: rightW, height: rightH))
         let rightBottomRightImageView = UIImageView()
         rightBottomRightImageView.frame = rightTopView.bounds
         rightBottomRightView.addSubview(rightBottomRightImageView)
@@ -61,6 +62,10 @@ class AYMiddleView: UIView {
         for i in 0..<3 {
             let bottomView = UIView(frame: CGRect(x: CGFloat(i) * (margin + bottomW), y: leftW + topMargin, width: bottomW, height: bottomW))
             bottomView.backgroundColor = UIColor.green
+            let imageName = String(format: "middle%d", i + 1)
+            let bottomImageView = UIImageView(frame: bottomView.bounds)
+            bottomImageView.image = UIImage(named: imageName)
+            bottomView.addSubview(bottomImageView)
             addSubview(bottomView)
         }
         
@@ -68,13 +73,13 @@ class AYMiddleView: UIView {
         for (index, middleData) in (middleDataArr?.enumerated())! {
             switch index {
             case 0:
-                leftImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "placeHolder"))
+                leftImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "default_p210"))
             case 1:
-                rightTopImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "placeHolder"))
+                rightTopImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "default_r172-118"))
             case 2:
-                rightBottomLeftImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "placeHolder"))
+                rightBottomLeftImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "default_p110"))
             default:
-                rightBottomRightImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "placeHolder"))
+                rightBottomRightImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "default_p110"))
             }
         }
     }
