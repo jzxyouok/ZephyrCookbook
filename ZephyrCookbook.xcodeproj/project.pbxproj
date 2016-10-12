@@ -19,6 +19,7 @@
 		851D2A531DAE600F00CA29A1 /* AYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D2A521DAE600F00CA29A1 /* AYProfileViewController.swift */; };
 		851D2A551DAE606500CA29A1 /* AYDaoJiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D2A541DAE606500CA29A1 /* AYDaoJiaViewController.swift */; };
 		851D2A571DAE608600CA29A1 /* AYDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D2A561DAE608600CA29A1 /* AYDiscoverViewController.swift */; };
+		851D2A591DAE61A800CA29A1 /* AYHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D2A581DAE61A800CA29A1 /* AYHeaderView.swift */; };
 		856750E41DABEFB700666B0F /* AYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750C71DABEFB700666B0F /* AYHomeViewController.swift */; };
 		856750E51DABEFB700666B0F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750C81DABEFB700666B0F /* Home.storyboard */; };
 		856750E61DABEFB700666B0F /* AYBannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750CA1DABEFB700666B0F /* AYBannerData.swift */; };
@@ -79,6 +80,7 @@
 		851D2A521DAE600F00CA29A1 /* AYProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYProfileViewController.swift; sourceTree = "<group>"; };
 		851D2A541DAE606500CA29A1 /* AYDaoJiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYDaoJiaViewController.swift; sourceTree = "<group>"; };
 		851D2A561DAE608600CA29A1 /* AYDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYDiscoverViewController.swift; sourceTree = "<group>"; };
+		851D2A581DAE61A800CA29A1 /* AYHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYHeaderView.swift; sourceTree = "<group>"; };
 		856750C71DABEFB700666B0F /* AYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYHomeViewController.swift; sourceTree = "<group>"; };
 		856750C81DABEFB700666B0F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		856750CA1DABEFB700666B0F /* AYBannerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerData.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			children = (
 				851D2A501DAE5FCE00CA29A1 /* Profile.storyboard */,
 				851D2A521DAE600F00CA29A1 /* AYProfileViewController.swift */,
+				851D2A581DAE61A800CA29A1 /* AYHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851D2A591DAE61A800CA29A1 /* AYHeaderView.swift in Sources */,
 				856750F91DABF1D400666B0F /* AYNavigationBar.swift in Sources */,
 				851D2A571DAE608600CA29A1 /* AYDiscoverViewController.swift in Sources */,
 				851D2A411DAE560400CA29A1 /* AYCategoryTableViewController.swift in Sources */,

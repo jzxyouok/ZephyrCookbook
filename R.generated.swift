@@ -530,11 +530,8 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `cell`.
-    static let cell: ReuseIdentifier<AYCollectionViewCell> = ReuseIdentifier(identifier: "cell")
-    
     private init() {}
   }
   
@@ -696,7 +693,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct profile: StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UITableViewController
+      typealias InitialController = AYProfileViewController
       
       let bundle = _R.hostingBundle
       let name = "Profile"

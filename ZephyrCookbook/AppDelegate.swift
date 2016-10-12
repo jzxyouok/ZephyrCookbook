@@ -16,11 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-//        window?.rootViewController = R.storyboard.aYNewFeature.InitialController()
-        window?.rootViewController = UIStoryboard(name: "AYNewFeature", bundle: nil).instantiateInitialViewController()
+        
+        let preVersion = UserDefaults.standard.string(forKey: "preVersion") ?? ""
+        let currentVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+        if currentVersion.compare(preVersion) == ComparisonResult.orderedDescending {
+            window?.rootViewController = UIStoryboard(name: "AYNewFeature", bundle: nil).instantiateInitialViewController()
+            UserDefaults.standard.set(currentVersion, forKey: "preVersion")
+        }else{
+            window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        }
+        
         window?.makeKeyAndVisible()
         
         UINavigationBar.appearance().tintColor = UIColor.orange
