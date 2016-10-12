@@ -13,6 +13,8 @@ class AYMiddleView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = UIColor.clear
+        
         setUpSubviews()
         
     }
@@ -23,7 +25,6 @@ class AYMiddleView: UIView {
     
     private func setUpSubviews() {
         
-        let topMargin: CGFloat = 10
         let margin: CGFloat = 5
         
         let leftW = (AYScreamWidth - margin) * 0.5
@@ -59,15 +60,19 @@ class AYMiddleView: UIView {
         addSubview(rightBottomRightView)
         
         let bottomW = (AYScreamWidth - margin * 2) / 3
+        let bottomContainerView = UIView(frame: CGRect(x: 0, y: leftW + margin * 2, width: AYScreamWidth, height: bottomW + margin * 5))
+        bottomContainerView.backgroundColor = UIColor.white
         for i in 0..<3 {
-            let bottomView = UIView(frame: CGRect(x: CGFloat(i) * (margin + bottomW), y: leftW + topMargin, width: bottomW, height: bottomW))
+            let bottomView = UIView(frame: CGRect(x: CGFloat(i) * (bottomW + margin), y: margin, width: bottomW, height: bottomW))
             bottomView.backgroundColor = UIColor.green
             let imageName = String(format: "middle%d", i + 1)
             let bottomImageView = UIImageView(frame: bottomView.bounds)
             bottomImageView.image = UIImage(named: imageName)
             bottomView.addSubview(bottomImageView)
-            addSubview(bottomView)
+            bottomContainerView.addSubview(bottomView)
         }
+        
+        addSubview(bottomContainerView)
         
         let middleDataArr = AYStatusTool.shareInstance.middleArr
         for (index, middleData) in (middleDataArr?.enumerated())! {
@@ -83,8 +88,8 @@ class AYMiddleView: UIView {
             }
         }
         
-        let middleH = leftView.frame.maxY + topMargin * 2 + bottomW
-        frame = CGRect(x: 0, y: middleH, width: AYScreamWidth, height: middleH)
+        let middleH = bottomContainerView.frame.maxY
+        frame = CGRect(x: 0, y: 0, width: AYScreamWidth, height: middleH)
         
     }
     

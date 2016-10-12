@@ -31,7 +31,6 @@ class AYHomeViewController: UITableViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(colorLiteralRed: 241 / 255.0, green: 239 / 255.0, blue: 241 / 255.0, alpha: 1)
-        tableView.backgroundColor = UIColor.clear
         view.insertSubview(headerView, at: 0)
         view.addSubview(navigationBar)
         navigationBar.textfield?.delegate = self

@@ -48,6 +48,9 @@ class AYHomeHeaderView: UIView {
         insertSubview(pageContr, aboveSubview: bannerView)
         addSubview(titleView)
         
+        var middleFrame = middleView.frame
+        middleFrame.origin.y = titleView.frame.maxY + 10
+        middleView.frame = middleFrame
         addSubview(middleView)
         
         frame = CGRect(x: 0, y: -middleView.frame.maxY, width: AYScreamWidth, height: middleView.frame.maxY)
