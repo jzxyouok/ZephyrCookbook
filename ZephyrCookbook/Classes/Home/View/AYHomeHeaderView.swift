@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AYMainScrollView: UIScrollView {
+class AYHomeHeaderView: UIView {
 
     lazy var bannerView: AYBannerVM = AYBannerVM()
     
@@ -27,10 +27,6 @@ class AYMainScrollView: UIScrollView {
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        
-        isScrollEnabled = true
-        showsHorizontalScrollIndicator = false
-        isUserInteractionEnabled = true
         
         RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
         
@@ -52,9 +48,9 @@ class AYMainScrollView: UIScrollView {
         insertSubview(pageContr, aboveSubview: bannerView)
         addSubview(titleView)
         
-        middleView.frame = CGRect(x: 0, y: titleView.frame.maxY + 10, width: AYScreamWidth, height: 50)
         addSubview(middleView)
         
+        frame = CGRect(x: 0, y: -middleView.frame.maxY, width: AYScreamWidth, height: middleView.frame.maxY)
     }
     
     @objc private func autoScrollBanner() {
@@ -71,6 +67,8 @@ class AYMainScrollView: UIScrollView {
             pageContr.currentPage = page
         }
         bannerView.setContentOffset(CGPoint(x: bannerView.contentOffset.x + AYScreamWidth, y: 0), animated: true)
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -80,13 +78,13 @@ class AYMainScrollView: UIScrollView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        frame = CGRect(x: 0, y: 0, width: AYScreamWidth, height: UIScreen.main.bounds.height)
-        contentSize = CGSize(width: AYScreamWidth, height: frame.height * 2)
+        
+        
     }
     
 }
 
-extension AYMainScrollView: UIScrollViewDelegate{
+extension AYHomeHeaderView: UIScrollViewDelegate{
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         guard let count = AYStatusTool.shareInstance.bannerArr?.count else{
             return

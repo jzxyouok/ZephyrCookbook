@@ -9,11 +9,11 @@
 import UIKit
 import SDWebImage
 
-class AYHomeViewController: UIViewController {
+class AYHomeViewController: UITableViewController {
     
-    lazy var mainScrollView: AYMainScrollView = AYMainScrollView()
+    private lazy var headerView: AYHomeHeaderView = AYHomeHeaderView()
     
-    lazy var navigationBar: AYNavigationBar = {
+    private lazy var navigationBar: AYNavigationBar = {
         let navigationBar = AYNavigationBar()
         let rightButton = UIButton(type: UIButtonType.custom)
         rightButton.setImage(#imageLiteral(resourceName: "icon_index_fenlei_black"), for: UIControlState.normal)
@@ -21,20 +21,21 @@ class AYHomeViewController: UIViewController {
         rightButton.addTarget(self, action: #selector(pushToCategoryViewController), for: UIControlEvents.touchUpInside)
         navigationBar.textfield?.rightView = rightButton
         navigationBar.textfield?.rightViewMode = UITextFieldViewMode.always
+        var naviFrame = navigationBar.frame
+        naviFrame.origin.y -= self.headerView.frame.size.height
+        navigationBar.frame = naviFrame
         return navigationBar
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        backItem.image = #imageLiteral(resourceName: "btn_header_back")
-        navigationController?.navigationItem.backBarButtonItem = backItem
-        view.addSubview(mainScrollView)
+        view.backgroundColor = UIColor(colorLiteralRed: 241 / 255.0, green: 239 / 255.0, blue: 241 / 255.0, alpha: 1)
+        tableView.backgroundColor = UIColor.clear
+        view.insertSubview(headerView, at: 0)
         view.addSubview(navigationBar)
         navigationBar.textfield?.delegate = self
-        
+        tableView.contentInset = UIEdgeInsets(top: headerView.frame.size.height, left: 0, bottom: 0, right: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +46,27 @@ class AYHomeViewController: UIViewController {
     
     @objc private func pushToCategoryViewController() {
         navigationController?.pushViewController(AYCategoryTableViewController(), animated: true)
+    }
+    
+    
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 20
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "cell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        cell.textLabel?.text = "tableView"
+        return cell
     }
    
 }

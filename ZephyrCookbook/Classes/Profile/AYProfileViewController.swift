@@ -10,9 +10,7 @@ import UIKit
 
 class AYProfileViewController: UITableViewController {
 
-    lazy var headerView: AYHeaderView = AYHeaderView()
-    let headerHeight: CGFloat = 300
-    let speed: CGFloat = 0.6
+    private lazy var headerView: AYHeaderView = AYHeaderView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

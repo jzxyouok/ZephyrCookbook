@@ -82,6 +82,10 @@ class AYMiddleView: UIView {
                 rightBottomRightImageView.sd_setImage(with: URL(string: middleData.imgs!), placeholderImage: #imageLiteral(resourceName: "default_p110"))
             }
         }
+        
+        let middleH = leftView.frame.maxY + topMargin * 2 + bottomW
+        frame = CGRect(x: 0, y: middleH, width: AYScreamWidth, height: middleH)
+        
     }
     
 }
