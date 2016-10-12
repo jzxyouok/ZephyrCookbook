@@ -1,5 +1,5 @@
 //
-//  AYProfileViewController.swift
+//  AYCategoryTableViewController.swift
 //  ZephyrCookbook
 //
 //  Created by Zephyr on 2016/10/12.
@@ -8,11 +8,18 @@
 
 import UIKit
 
-class AYProfileViewController: UITableViewController {
+class AYCategoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.title = "分类"
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         navigationController?.navigationBar.isHidden = false
     }
 

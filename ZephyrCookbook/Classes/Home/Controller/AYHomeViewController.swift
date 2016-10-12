@@ -13,20 +13,38 @@ class AYHomeViewController: UIViewController {
     
     lazy var mainScrollView: AYMainScrollView = AYMainScrollView()
     
-    lazy var navigationBar: AYNavigationBar = AYNavigationBar()
+    lazy var navigationBar: AYNavigationBar = {
+        let navigationBar = AYNavigationBar()
+        let rightButton = UIButton(type: UIButtonType.custom)
+        rightButton.setImage(#imageLiteral(resourceName: "icon_index_fenlei_black"), for: UIControlState.normal)
+        rightButton.sizeToFit()
+        rightButton.addTarget(self, action: #selector(pushToCategoryViewController), for: UIControlEvents.touchUpInside)
+        navigationBar.textfield?.rightView = rightButton
+        navigationBar.textfield?.rightViewMode = UITextFieldViewMode.always
+        return navigationBar
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.view.insertSubview(navigationBar, belowSubview: (navigationController?.navigationBar)!)
-        navigationController?.navigationBar.isHidden = true
-        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        backItem.image = #imageLiteral(resourceName: "btn_header_back")
+        navigationController?.navigationItem.backBarButtonItem = backItem
+        view.addSubview(mainScrollView)
+        view.addSubview(navigationBar)
         navigationBar.textfield?.delegate = self
         
-        automaticallyAdjustsScrollViewInsets = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        view.addSubview(mainScrollView)
-        
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    @objc private func pushToCategoryViewController() {
+        navigationController?.pushViewController(AYCategoryTableViewController(), animated: true)
     }
    
 }
@@ -34,7 +52,7 @@ class AYHomeViewController: UIViewController {
 extension AYHomeViewController: UITextFieldDelegate{
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
-        navigationController?.present(AYSearchViewController(), animated: true, completion: nil)
+        navigationController?.pushViewController(AYSearchViewController(), animated: false)
         
         return false
     }

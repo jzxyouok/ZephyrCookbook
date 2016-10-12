@@ -35,7 +35,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 64 images.
+  /// This `R.image` struct is generated, and contains static references to 68 images.
   struct image {
     /// Image `bannerImage`.
     static let bannerImage = ImageResource(bundle: _R.hostingBundle, name: "bannerImage")
@@ -43,6 +43,12 @@ struct R: Rswift.Validatable {
     static let bg_header_search = ImageResource(bundle: _R.hostingBundle, name: "bg_header_search")
     /// Image `bg_search_opacity`.
     static let bg_search_opacity = ImageResource(bundle: _R.hostingBundle, name: "bg_search_opacity")
+    /// Image `btn_header_back`.
+    static let btn_header_back = ImageResource(bundle: _R.hostingBundle, name: "btn_header_back")
+    /// Image `btn_header_back_gray`.
+    static let btn_header_back_gray = ImageResource(bundle: _R.hostingBundle, name: "btn_header_back_gray")
+    /// Image `btn_header_back_white`.
+    static let btn_header_back_white = ImageResource(bundle: _R.hostingBundle, name: "btn_header_back_white")
     /// Image `default_daily_first`.
     static let default_daily_first = ImageResource(bundle: _R.hostingBundle, name: "default_daily_first")
     /// Image `default_foodlike_big`.
@@ -111,6 +117,8 @@ struct R: Rswift.Validatable {
     static let guide_step5 = ImageResource(bundle: _R.hostingBundle, name: "guide_step5")
     /// Image `homeSearch`.
     static let homeSearch = ImageResource(bundle: _R.hostingBundle, name: "homeSearch")
+    /// Image `icon_index_fenlei_black`.
+    static let icon_index_fenlei_black = ImageResource(bundle: _R.hostingBundle, name: "icon_index_fenlei_black")
     /// Image `LaunchImage`.
     static let launchImage = ImageResource(bundle: _R.hostingBundle, name: "LaunchImage")
     /// Image `menu_ico_center`.
@@ -179,6 +187,21 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "bg_search_opacity", bundle: ..., traitCollection: ...)`
     static func bg_search_opacity(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.bg_search_opacity, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "btn_header_back", bundle: ..., traitCollection: ...)`
+    static func btn_header_back(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.btn_header_back, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "btn_header_back_gray", bundle: ..., traitCollection: ...)`
+    static func btn_header_back_gray(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.btn_header_back_gray, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "btn_header_back_white", bundle: ..., traitCollection: ...)`
+    static func btn_header_back_white(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.btn_header_back_white, compatibleWithTraitCollection: traitCollection)
     }
     
     /// `UIImage(named: "default_daily_first", bundle: ..., traitCollection: ...)`
@@ -349,6 +372,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "homeSearch", bundle: ..., traitCollection: ...)`
     static func homeSearch(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.homeSearch, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "icon_index_fenlei_black", bundle: ..., traitCollection: ...)`
+    static func icon_index_fenlei_black(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.icon_index_fenlei_black, compatibleWithTraitCollection: traitCollection)
     }
     
     /// `UIImage(named: "LaunchImage", bundle: ..., traitCollection: ...)`
@@ -608,7 +636,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct daoJia: StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIViewController
+      typealias InitialController = AYDaoJiaViewController
       
       let bundle = _R.hostingBundle
       let name = "DaoJia"
@@ -622,7 +650,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct discover: StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIViewController
+      typealias InitialController = AYDiscoverViewController
       
       let bundle = _R.hostingBundle
       let name = "Discover"
@@ -659,7 +687,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct main: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = UINavigationController
+      typealias InitialController = AYNavigationController
       
       let bundle = _R.hostingBundle
       let name = "Main"
@@ -668,7 +696,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct profile: StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = AYProfileViewController
+      typealias InitialController = UITableViewController
       
       let bundle = _R.hostingBundle
       let name = "Profile"

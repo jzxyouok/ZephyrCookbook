@@ -9,7 +9,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hms-Nx-n92">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yfT-QE-A5q" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yfT-QE-A5q" customClass="AYNavigationController" customModule="ZephyrCookbook" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pr1-QY-5mb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -27,7 +27,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="cR5-hL-hug">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="roC-11-h2p" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="roC-11-h2p" customClass="AYTabBarController" customModule="ZephyrCookbook" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Vul-iA-Mnw"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="wG4-Bg-DKm">
@@ -37,9 +37,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="OL8-Ug-7RY" kind="relationship" relationship="viewControllers" id="fhT-mR-oCS"/>
-                        <segue destination="Mkw-He-2TA" kind="relationship" relationship="viewControllers" id="77E-nS-Nzm"/>
-                        <segue destination="V9F-QM-PjP" kind="relationship" relationship="viewControllers" id="pCl-gV-Csc"/>
-                        <segue destination="bCS-Cu-Res" kind="relationship" relationship="viewControllers" id="EnK-sO-Lfn"/>
+                        <segue destination="tBu-VU-Mka" kind="relationship" relationship="viewControllers" id="Tir-ev-KlF"/>
+                        <segue destination="9gu-LM-gj9" kind="relationship" relationship="viewControllers" id="sXt-Uw-qfN"/>
+                        <segue destination="7az-ru-yKz" kind="relationship" relationship="viewControllers" id="PSX-wz-cXr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="beU-Ll-mCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,34 +57,34 @@
             <point key="canvasLocation" x="2114" y="-99"/>
         </scene>
         <!--DaoJia-->
-        <scene sceneID="pPT-lT-tgz">
+        <scene sceneID="uOt-2P-xFk">
             <objects>
-                <viewControllerPlaceholder storyboardName="DaoJia" id="Mkw-He-2TA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0Y6-Bb-31q"/>
+                <viewControllerPlaceholder storyboardName="DaoJia" id="tBu-VU-Mka" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dVr-Qh-yzR"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7UV-RN-Cb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8b-ap-Guy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2093" y="43"/>
+            <point key="canvasLocation" x="2109" y="71"/>
         </scene>
         <!--Discover-->
-        <scene sceneID="Sk3-r8-m2A">
+        <scene sceneID="dbE-X9-swD">
             <objects>
-                <viewControllerPlaceholder storyboardName="Discover" id="V9F-QM-PjP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kE4-eX-KXC"/>
+                <viewControllerPlaceholder storyboardName="Discover" id="9gu-LM-gj9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZHN-dd-iNO"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wLa-QE-F98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ff-EO-VsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2102" y="176"/>
+            <point key="canvasLocation" x="2110" y="228"/>
         </scene>
         <!--Profile-->
-        <scene sceneID="Jhd-yE-xDd">
+        <scene sceneID="mPz-Ku-mfy">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="bCS-Cu-Res" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="RmR-PI-zIJ"/>
+                <viewControllerPlaceholder storyboardName="Profile" id="7az-ru-yKz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="u1R-My-tYt"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m86-T6-DHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qv5-Vw-fOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="294"/>
+            <point key="canvasLocation" x="2117" y="387"/>
         </scene>
     </scenes>
 </document>

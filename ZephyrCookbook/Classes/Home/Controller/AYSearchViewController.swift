@@ -10,27 +10,38 @@ import UIKit
 
 class AYSearchViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBar.isHidden = false
+        view.addSubview(navigationBar)
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc private func popToPreViewController() {
+        navigationController?.popViewController(animated: true)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    lazy var navigationBar: AYNavigationBar = {
+        let navigationBar = AYNavigationBar()
+        //设置textField
+        let textField = navigationBar.textfield
+        navigationBar.textfield?.text = nil
+        let buttonW: CGFloat = 50
+        var tfFrame = navigationBar.textfield?.frame
+        tfFrame?.size.width -= buttonW
+        navigationBar.textfield?.frame = tfFrame!
+        //设置取消按钮
+        tfFrame?.size.width = buttonW
+        tfFrame?.origin.x = (textField?.frame.maxX)!
+        let button = UIButton(frame: tfFrame!)
+        button.setTitle("取消", for: UIControlState.normal)
+        button.setTitleColor(UIColor.orange, for: UIControlState.normal)
+        button.addTarget(self, action: #selector(popToPreViewController), for: UIControlEvents.touchUpInside)
+        navigationBar.addSubview(button)
+        
+        return navigationBar
+    }()
 }

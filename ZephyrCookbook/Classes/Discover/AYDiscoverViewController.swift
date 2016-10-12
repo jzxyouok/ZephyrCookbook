@@ -1,5 +1,5 @@
 //
-//  AYProfileViewController.swift
+//  AYDiscoverViewController.swift
 //  ZephyrCookbook
 //
 //  Created by Zephyr on 2016/10/12.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AYProfileViewController: UITableViewController {
+class AYDiscoverViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
