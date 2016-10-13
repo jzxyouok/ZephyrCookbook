@@ -17,6 +17,11 @@
 		851D2A551DAE606500CA29A1 /* AYDaoJiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D2A541DAE606500CA29A1 /* AYDaoJiaViewController.swift */; };
 		851D2A571DAE608600CA29A1 /* AYDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D2A561DAE608600CA29A1 /* AYDiscoverViewController.swift */; };
 		851D2A591DAE61A800CA29A1 /* AYHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D2A581DAE61A800CA29A1 /* AYHeaderView.swift */; };
+		85298FEA1DAF9863006B617D /* AYMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85298FE91DAF9863006B617D /* AYMainCell.swift */; };
+		8565E2591DAFA003009D5318 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565E2581DAFA003009D5318 /* UIImage+Extension.swift */; };
+		8565E25B1DAFA46C009D5318 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565E25A1DAFA46C009D5318 /* common.swift */; };
+		8565E25D1DAFA481009D5318 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565E25C1DAFA481009D5318 /* UIView+Extension.swift */; };
+		8565E25F1DAFBBFB009D5318 /* AYMainCellFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565E25E1DAFBBFB009D5318 /* AYMainCellFrame.swift */; };
 		856750E41DABEFB700666B0F /* AYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750C71DABEFB700666B0F /* AYHomeViewController.swift */; };
 		856750E61DABEFB700666B0F /* AYBannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750CA1DABEFB700666B0F /* AYBannerData.swift */; };
 		856750E71DABEFB700666B0F /* AYMainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750CB1DABEFB700666B0F /* AYMainData.swift */; };
@@ -32,7 +37,6 @@
 		856750F11DABEFB700666B0F /* AYNewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856750D81DABEFB700666B0F /* AYNewFeature.storyboard */; };
 		856750F21DABEFB700666B0F /* AYNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750D91DABEFB700666B0F /* AYNewFeatureViewController.swift */; };
 		856750F51DABEFB700666B0F /* AYStatusTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750DF1DABEFB700666B0F /* AYStatusTool.swift */; };
-		856750F71DABF09C00666B0F /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750F61DABF09C00666B0F /* common.swift */; };
 		856750F91DABF1D400666B0F /* AYNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856750F81DABF1D400666B0F /* AYNavigationBar.swift */; };
 		857727EE1DAA24AE00CDC563 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857727ED1DAA24AE00CDC563 /* R.generated.swift */; };
 		857A5CC31DAE7A51002FB875 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A5CC21DAE7A51002FB875 /* Home.storyboard */; };
@@ -78,6 +82,11 @@
 		851D2A541DAE606500CA29A1 /* AYDaoJiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYDaoJiaViewController.swift; sourceTree = "<group>"; };
 		851D2A561DAE608600CA29A1 /* AYDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYDiscoverViewController.swift; sourceTree = "<group>"; };
 		851D2A581DAE61A800CA29A1 /* AYHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYHeaderView.swift; sourceTree = "<group>"; };
+		85298FE91DAF9863006B617D /* AYMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainCell.swift; sourceTree = "<group>"; };
+		8565E2581DAFA003009D5318 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8565E25A1DAFA46C009D5318 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		8565E25C1DAFA481009D5318 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8565E25E1DAFBBFB009D5318 /* AYMainCellFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainCellFrame.swift; sourceTree = "<group>"; };
 		856750C71DABEFB700666B0F /* AYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYHomeViewController.swift; sourceTree = "<group>"; };
 		856750CA1DABEFB700666B0F /* AYBannerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBannerData.swift; sourceTree = "<group>"; };
 		856750CB1DABEFB700666B0F /* AYMainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMainData.swift; sourceTree = "<group>"; };
@@ -93,7 +102,6 @@
 		856750D81DABEFB700666B0F /* AYNewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYNewFeature.storyboard; sourceTree = "<group>"; };
 		856750D91DABEFB700666B0F /* AYNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYNewFeatureViewController.swift; sourceTree = "<group>"; };
 		856750DF1DABEFB700666B0F /* AYStatusTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYStatusTool.swift; sourceTree = "<group>"; };
-		856750F61DABF09C00666B0F /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = common.swift; path = ../common.swift; sourceTree = "<group>"; };
 		856750F81DABF1D400666B0F /* AYNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYNavigationBar.swift; sourceTree = "<group>"; };
 		857727ED1DAA24AE00CDC563 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		857A5CC21DAE7A51002FB875 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ZephyrCookbook/Classes/Home/Controller/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -160,9 +168,10 @@
 		851D2A3D1DAE4B3600CA29A1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				856750F61DABF09C00666B0F /* common.swift */,
+				8565E2581DAFA003009D5318 /* UIImage+Extension.swift */,
+				8565E25C1DAFA481009D5318 /* UIView+Extension.swift */,
 			);
-			name = Category;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		853BCAA91DA9FF59008775EB /* Resource */ = {
@@ -170,6 +179,14 @@
 			children = (
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		8565E2601DAFBC14009D5318 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8565E25E1DAFBBFB009D5318 /* AYMainCellFrame.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		856750BD1DABEFB700666B0F /* Classes */ = {
@@ -230,6 +247,7 @@
 		856750C91DABEFB700666B0F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8565E2601DAFBC14009D5318 /* ViewModel */,
 				856750CA1DABEFB700666B0F /* AYBannerData.swift */,
 				856750CB1DABEFB700666B0F /* AYMainData.swift */,
 				856750CC1DABEFB700666B0F /* AYMiddleData.swift */,
@@ -248,6 +266,7 @@
 				856750D21DABEFB700666B0F /* AYMiddleView.swift */,
 				856750D31DABEFB700666B0F /* AYPageControl.swift */,
 				856750F81DABF1D400666B0F /* AYNavigationBar.swift */,
+				85298FE91DAF9863006B617D /* AYMainCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +342,7 @@
 			children = (
 				856750BD1DABEFB700666B0F /* Classes */,
 				85D4E94D1DA9E9420098B2C5 /* AppDelegate.swift */,
+				8565E25A1DAFA46C009D5318 /* common.swift */,
 				85D4E9561DA9E9420098B2C5 /* LaunchScreen.storyboard */,
 				857727ED1DAA24AE00CDC563 /* R.generated.swift */,
 				85ED39F41DAD0873003F2ADF /* Assets.xcassets */,
@@ -656,12 +676,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8565E25B1DAFA46C009D5318 /* common.swift in Sources */,
+				8565E25F1DAFBBFB009D5318 /* AYMainCellFrame.swift in Sources */,
 				851D2A591DAE61A800CA29A1 /* AYHeaderView.swift in Sources */,
 				856750F91DABF1D400666B0F /* AYNavigationBar.swift in Sources */,
 				851D2A571DAE608600CA29A1 /* AYDiscoverViewController.swift in Sources */,
 				851D2A411DAE560400CA29A1 /* AYCategoryTableViewController.swift in Sources */,
-				856750F71DABF09C00666B0F /* common.swift in Sources */,
 				851D2A531DAE600F00CA29A1 /* AYProfileViewController.swift in Sources */,
+				85298FEA1DAF9863006B617D /* AYMainCell.swift in Sources */,
 				856750F51DABEFB700666B0F /* AYStatusTool.swift in Sources */,
 				856750E81DABEFB700666B0F /* AYMiddleData.swift in Sources */,
 				85D4E94E1DA9E9420098B2C5 /* AppDelegate.swift in Sources */,
@@ -676,6 +698,8 @@
 				856750EA1DABEFB700666B0F /* AYBannerVM.swift in Sources */,
 				856750ED1DABEFB700666B0F /* AYMiddleView.swift in Sources */,
 				856750EF1DABEFB700666B0F /* AYTitleView.swift in Sources */,
+				8565E2591DAFA003009D5318 /* UIImage+Extension.swift in Sources */,
+				8565E25D1DAFA481009D5318 /* UIView+Extension.swift in Sources */,
 				856750EC1DABEFB700666B0F /* AYHomeHeaderView.swift in Sources */,
 				856750EE1DABEFB700666B0F /* AYPageControl.swift in Sources */,
 				85ED39F71DAD2EDB003F2ADF /* AYSearchViewController.swift in Sources */,

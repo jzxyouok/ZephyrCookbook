@@ -18,6 +18,10 @@ class AYMainData: NSObject {
     var title: String?
     //用户头像
     var userAvatar: String?
+    //用户名字
+    var userName: String?
+    //图片比例
+    var ratio: NSNumber?
     
     // MARK:字典转模型
     private class func mainDataWithDict(dict: [String: Any]) -> AYMainData{

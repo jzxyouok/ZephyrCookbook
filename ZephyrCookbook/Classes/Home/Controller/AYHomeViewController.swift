@@ -13,6 +13,16 @@ class AYHomeViewController: UITableViewController {
     
     private lazy var headerView: AYHomeHeaderView = AYHomeHeaderView()
     
+    private lazy var mainCellFrames: [AYMainCellFrame] = {
+        var mainCellFrames = [AYMainCellFrame]()
+        for mainData in AYStatusTool.shareInstance.mainArr! {
+            let frame = AYMainCellFrame()
+            frame.mainData = mainData
+            mainCellFrames.append(frame)
+        }
+        return mainCellFrames
+    }()
+    
     private lazy var navigationBar: AYNavigationBar = {
         let navigationBar = AYNavigationBar()
         let rightButton = UIButton(type: UIButtonType.custom)
@@ -51,21 +61,23 @@ class AYHomeViewController: UITableViewController {
     
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 20
+        return AYStatusTool.shareInstance.mainArr?.count ?? 100
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = "tableView"
+        
+        let cell = AYMainCell.mainCell(tableView: tableView)
+        cell.mainCellFrame = mainCellFrames[indexPath.item]
+        
         return cell
+    }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return  mainCellFrames[indexPath.item].cellHeight!
     }
    
 }
