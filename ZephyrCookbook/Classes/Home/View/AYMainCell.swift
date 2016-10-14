@@ -13,9 +13,7 @@ class AYMainCell: UITableViewCell {
 
     var cellHeight: CGFloat?
     
-    private let titleFont: UIFont = UIFont.boldSystemFont(ofSize: 18)
-    private let nameFont: UIFont = UIFont.systemFont(ofSize: 13)
-    private let descFont: UIFont = UIFont.systemFont(ofSize: 14)
+    
     private let iconW: CGFloat = 40
     private let leftMargin: CGFloat = 10
     
@@ -24,6 +22,7 @@ class AYMainCell: UITableViewCell {
     private var iconView: UIImageView?
     private var nameLabel: UILabel?
     private var descLabel: UILabel?
+    private var containerView: UIView?
     
     class func mainCell(tableView: UITableView) -> AYMainCell{
         let reuseID = "mainCell"
@@ -31,7 +30,7 @@ class AYMainCell: UITableViewCell {
         if cell == nil {
             cell = AYMainCell(style: UITableViewCellStyle.default, reuseIdentifier: reuseID)
         }
-//        cell?.backgroundColor = UIColor.red
+        cell?.backgroundColor = UIColor.clear
         return cell!
     }
     
@@ -48,38 +47,54 @@ class AYMainCell: UITableViewCell {
     
     func setUpSubviews() {
         
+        let containerView = UIView()
+        containerView.backgroundColor = UIColor.white
+        addSubview(containerView)
+        self.containerView = containerView
+        
         let cellImageView = UIImageView()
-        cellImageView.backgroundColor = UIColor.red
-        self.cellImageView = imageView
-        contentView.addSubview(cellImageView)
+        self.cellImageView = cellImageView
+        containerView.addSubview(cellImageView)
         
         let titleLabel = UILabel()
         titleLabel.textAlignment = NSTextAlignment.center
         titleLabel.font = titleFont
         self.titleLabel = titleLabel
-        contentView.addSubview(titleLabel)
+        containerView.addSubview(titleLabel)
         
         let iconView = UIImageView()
         self.iconView = iconView
-        contentView.addSubview(iconView)
+        containerView.addSubview(iconView)
         
         let nameLabel = UILabel()
         nameLabel.textAlignment = NSTextAlignment.center
         nameLabel.font = nameFont
+        nameLabel.textColor = UIColor.gray
         self.nameLabel = nameLabel
-        contentView.addSubview(nameLabel)
+        containerView.addSubview(nameLabel)
         
         let descLabel = UILabel()
         descLabel.numberOfLines = 0
         descLabel.font = descFont
-        descLabel.textAlignment = NSTextAlignment.center
+        descLabel.textAlignment = NSTextAlignment.left
+        descLabel.textColor = UIColor.gray
         self.descLabel = descLabel
-        contentView.addSubview(descLabel)
+        containerView.addSubview(descLabel)
         
     }
     
     var mainCellFrame: AYMainCellFrame?{
         didSet{
+            
+            //设置Frame
+            cellImageView?.frame = mainCellFrame?.cellImageViewFrame ?? CGRect.zero
+            titleLabel?.frame = mainCellFrame?.titleLabelFrame ?? CGRect.zero
+            iconView?.frame = mainCellFrame?.iconViewFrame ?? CGRect.zero
+            iconView?.layer.cornerRadius = (iconView?.frame.width)! * 0.5
+            iconView?.layer.masksToBounds = true
+            nameLabel?.frame = mainCellFrame?.nameLabelFrame ?? CGRect.zero
+            descLabel?.frame = mainCellFrame?.descLabelFrame ?? CGRect.zero
+            containerView?.frame = mainCellFrame?.containerFrame ?? CGRect.zero
             
             //设置数据
             if let mainData = mainCellFrame?.mainData {
@@ -100,15 +115,6 @@ class AYMainCell: UITableViewCell {
                     descLabel?.text = desc
                 }
             }
-            
-            //设置Frame
-            cellImageView?.frame = mainCellFrame?.cellImageViewFrame ?? CGRect.zero
-            titleLabel?.frame = mainCellFrame?.titleLabelFrame ?? CGRect.zero
-            iconView?.frame = mainCellFrame?.iconViewFrame ?? CGRect.zero
-            iconView?.layer.cornerRadius = (iconView?.frame.width)! * 0.5
-            iconView?.layer.masksToBounds = true
-            nameLabel?.frame = mainCellFrame?.nameLabelFrame ?? CGRect.zero
-            descLabel?.frame = mainCellFrame?.descLabelFrame ?? CGRect.zero
         }
     }
 
@@ -117,6 +123,7 @@ class AYMainCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        self.selectionStyle = UITableViewCellSelectionStyle.none
     }
 
 }

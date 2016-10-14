@@ -35,22 +35,21 @@ class AYMiddleView: UIView {
         leftView.backgroundColor = UIColor.green
         
         let rightH = (leftW - margin) * 0.5
-        let rightW = (AYScreamWidth - leftW - margin * 2) * 0.5
         let rightTopView = UIView(frame: CGRect(x: leftW + margin, y: 0, width: leftW, height: rightH))
         let rightTopImageView = UIImageView()
         rightTopImageView.frame = rightTopView.bounds
         rightTopView.addSubview(rightTopImageView)
         rightTopView.backgroundColor = UIColor.green
         
-        let rightBottomLeftView = UIView(frame: CGRect(x: leftW + margin, y: rightH + margin, width: rightW, height: rightH))
+        let rightBottomLeftView = UIView(frame: CGRect(x: leftW + margin, y: rightH + margin, width: rightH, height: rightH))
         let rightBottomLeftImageView = UIImageView()
-        rightBottomLeftImageView.frame = rightTopView.bounds
+        rightBottomLeftImageView.frame = rightBottomLeftView.bounds
         rightBottomLeftView.addSubview(rightBottomLeftImageView)
         rightBottomLeftView.backgroundColor = UIColor.green
         
-        let rightBottomRightView = UIView(frame: CGRect(x: rightBottomLeftView.frame.maxX + margin, y: rightH + margin, width: rightW, height: rightH))
+        let rightBottomRightView = UIView(frame: CGRect(x: rightBottomLeftView.frame.maxX + margin, y: rightH + margin, width: rightH, height: rightH))
         let rightBottomRightImageView = UIImageView()
-        rightBottomRightImageView.frame = rightTopView.bounds
+        rightBottomRightImageView.frame = rightBottomRightView.bounds
         rightBottomRightView.addSubview(rightBottomRightImageView)
         rightBottomRightView.backgroundColor = UIColor.green
         
